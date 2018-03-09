@@ -1,0 +1,507 @@
+#perguntas {
+    font-family: Times, Arial, sans-serif;
+    width: 720px;
+    float: left;
+    height: 170px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.excluirperfil {
+    background: red;
+    border: red;
+    color: white;
+    font-weight: bolder;
+}
+
+fieldset {
+    border-radius: 8px;
+    padding: 10px;
+    line-height: 2.8em;
+    font-family: "Century Gothic",Times,serif;
+}
+
+#msgerro {
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+}
+
+table {
+    text-align: left;
+}
+
+
+#conteudo_pagina td {
+    padding: 10px;
+}
+
+.maiusculas {
+    text-transform: uppercase;
+}
+
+#analise_resposta {
+    font-family: Times, Arial, sans-serif;
+    width: 720px;
+    float: left;
+    height: 170px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+#usuario_analise {
+    width: 170px;
+    background:gainsboro;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    height: 150px;
+    line-height: 1.8em;
+    float: left;
+    font-size: small;
+    display: block;
+}
+
+#resposta_analise {
+    float: left;
+    padding: 10px;
+    height: 150px;
+    width: 480px;
+    display: block;
+}
+
+#anuncios {
+    font-family: Times, Arial, sans-serif;
+    width: 720px;
+    float: left;
+    height: 370px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#outras_comunidades {
+    font-family: Times, Arial, sans-serif;
+    width: 700px;
+    float: left;
+    height: 300px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#usuario_comunidade {
+    width: 150px;
+    background:gainsboro;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    height: 280px;
+    line-height: 1.8em;
+    float: left;
+    font-size: small;
+    text-align: left;
+    display: block;
+}
+
+#conteudo_comunidade {
+    float: left;
+    padding: 10px;
+    height: 150px;
+    width: 500px;
+    display: inline-block;
+}
+
+#conteudo_comunidade h1 {
+    text-align: justify;
+    font-family: Times;
+    font-size: 20px;
+}
+
+#conteudo_comunidade a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#conteudo_comunidade a:hover {
+    text-decoration: underline;
+}
+
+#outras_perguntas {
+    font-family: Times, Arial, sans-serif;
+    width: 700px;
+    float: left;
+    height: 300px;
+    border: 1px black solid;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#outros_anuncios {
+    font-family: Times, Arial, sans-serif;
+    width: 700px;
+    float: left;
+    height: 350px;
+    border: 1px black solid;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+#usuario_pergunta {
+    width: 150px;
+    background:gainsboro;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    height: 150px;
+    line-height: 1.8em;
+    float: left;
+    font-size: small;
+    display: block;
+}
+
+#usuario_outras_perguntas {
+    width: 150px;
+    background:gainsboro;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    height: 280px;
+    line-height: 1.8em;
+    float: left;
+    font-size: small;
+    display: block;
+}
+
+#usuario_outros_anuncios {
+    width: 260px;
+    background:gainsboro;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px;
+    height: 330px;
+    line-height: 1.8em;
+    float: left;
+    font-size: small;
+    display: block;
+}
+
+#conteudo_pergunta {
+    float: left;
+    padding: 10px;
+    height: 150px;
+    width: 500px;
+    display: block;
+}
+
+
+#conteudo_outras_perguntas {
+    padding: 10px;
+    padding-left: 180px;
+    height: 280px;
+    width: 660px;
+}
+
+#conteudo_outros_anuncios {
+    padding: 10px;
+    height: 280px;
+    width: 300px;
+    display: inline-block;
+}
+
+#conteudo_outros_anuncios h5 {
+    font-size: 22pt;
+    font-family: Times, Helvetica, Serif;
+    font-style: italic;
+}
+
+#conteudo_pergunta b {
+    font-size: 15pt;
+}
+
+.texto {
+    font-size: 10pt;
+    width: 300px;
+}
+
+body {
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: darkgreen;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#pagina {
+    text-align: justify;
+    width: 950px;
+    height: 100%;
+    background: white;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#banner {
+    width: 100%;
+    height: 132px;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+#logotipo {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    float: left;
+}
+
+#busca {
+    width: 320px;
+    height: 60px;
+    padding-top: 35px;
+    padding-left: 40px;
+    text-align: center;
+    float: left;
+    vertical-align: middle;
+}
+
+#area_usuario {
+    width: 240px;
+    height: 85px;
+    border-top-left-radius: 8px;	
+    border-top-right-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    text-align: center;
+    float: left;
+    background-color: green;
+    color: white;
+}
+
+#area_usuario td {
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+#area_usuario a {
+    color: white;
+    text-decoration: none;
+}
+
+#area_usuario a:hover {
+    text-decoration: underline;
+}
+
+#area_usuario table {
+   border: 0;
+   text-align: justify;
+}
+
+#area_usuario table tr td {
+    color: white;
+    text-align: justify;
+}
+
+
+#barra_menus {
+    width: 100%;
+    height: 60px;
+    background: #CC0000;
+    border-top-right-radius: 10px; 
+    border-top-left-radius: 10px;
+    padding-top: 15px;
+}
+
+#barra_menus ul {	
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+#barra_menus li {
+    display: inline;
+    float: left;
+    height: 100%;
+}
+
+#barra_menus a:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+
+#barra_menus a {
+    display: block;
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Arial,"Times New Roman";
+    font-size: 16pt;
+    text-decoration: italic;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+}
+
+#erro {
+    color: red;
+    font-weight: bold;
+}
+
+#conteudo {
+    width: 98%;
+    display: inline-block;
+    background: powderblue; 
+    border: black 1px;
+    padding: 10px;
+}
+
+#rodape {
+    height: 35px;
+    width: 900px;
+    font-family: Arial, Sans-Serif;
+    font-size: 13pt;
+    text-align: center;
+    padding-top: 8px;
+    color: white;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-left: 25px;
+    background:green;
+	display: block;
+}
+
+#rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
+
+#barra_lateral {
+    width: 180px;
+    height: 100%;
+    padding: 16px;
+    float: left;
+    display: inline-block;
+    text-align: left;
+    font-family: "Century Gothic",Verdana, serif;
+    font-size: 14px;
+}
+
+.input_transp {
+    color: darkgreen;
+    font-size: 14pt;
+    font-family: "Century Gothic", "Segoe UI Light", Verdana, serif; 
+}
+
+#conteudo_pagina {
+    width: 680px;
+    float: left;
+    display: block;
+}
+
+#conteudo_pagina form {
+    font-family: "Century Gothic", "Segoe UI Light", Verdana, serif;
+}
+
+#conteudo  small {
+    color: red;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Century Gothic","Segoe UI Light","Times",serif;
+}
+
+#comunidade_selecionada {
+    width: 680px;
+    height: auto;
+    display: block;
+    color: black;
+    padding: 10px;
+}
+
+#comunidade_selecionada b {
+    font-size: 18px;
+    font-family: "Century Gothic",Times;
+    line-height: 1.8em;
+}
+
+#usuarios_comunidade {
+    width: 140px;
+    height: 125%;
+    float: left;
+    padding: 10px;
+    display: block;
+}
+
+#conteudo_comunidade {
+    width: 500px;
+    height: auto;
+    padding-top: 3px;
+}
+
+#conteudo_comunidade b {
+    font-size: 16pt;
+    line-height: 2em;
+}
+
+#descricao_comunidade {
+    width:500px;
+    height: 130px;
+}
+
+#mensagens_comunidade {
+    width: 500px;
+    height: 100%;
+    display: inline;
+}
+
+#mensagem {
+    width: 460px;
+    border: 1px solid black;
+    font-family: "Century Gothic",Times,serif;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+#mensagem b {
+    font-family: Times;
+    font-size: medium;
+}
+
+#mensagem small {
+    font-weight: normal;
+    font-style: normal;
+    color: black;
+    font-family: Times;
+    font-size: 12px;
+}
+
+#login {
+    padding: 12px;
+}
