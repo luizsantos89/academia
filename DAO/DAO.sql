@@ -47,3 +47,13 @@ CREATE TABLE aparelho(
     CONSTRAINT ADD PK_IdAparelho PRIMARY KEY REFERENCES idAparelho,
     CONSTRAINT ADD FK_IdFuncionario FOREIGN KEY REFERENCES funcionario(idFuncionario)
 );
+
+CREATE TABLE atividade(
+    idAtividade INT PRIMARY KEY NOT NULL UNIQUE,
+    idFuncionario INT NOT NULL,
+    idAparelho INT NOT NULL,
+    descricao VARCHAR(100),
+    CONSTRAINT ADD PK_IdAtividade PRIMARY KEY REFERENCES idAtividade,
+    CONSTRAINT ADD FK_IdFuncionario FOREIGN KEY REFERENCES funcionario(idFuncionario),
+    CONSTRAINT ADD FK)IdAparelho FOREIGN KEY REFERENCES aparelho(idAparelho)
+);

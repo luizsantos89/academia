@@ -12,7 +12,7 @@
                 <div id="banner">
                     <!-- ImplementaÃ§Ã£o do Logotipo -->
                     <div id="logotipo">
-                            <a href="index.php"><img src="imagens/logo1.png"  /></a>
+                            <a href="index.php"><img src="imagens/logo2.png"  /></a>
                     </div>
 
                     <!-- ImplementaÃ§Ã£o do algoritmo de busca -->

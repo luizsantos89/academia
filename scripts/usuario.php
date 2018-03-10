@@ -12,10 +12,10 @@
                 $usuario = $_SESSION["apelido"];
                 $hora = $usuarios["hora_cadastro"];
                 $data = $usuarios["data_cadastro"];
-                echo("Bem vindo, <a href='perfil.php'>".$usuario.'</a> 
-                | <a href="scripts/logout.php">Sair</a><br />');
+                echo("Bem vindo, <a href='perfil.php'>".$usuario."</a> 
+                | <a href='scripts/logout.php'>Sair</a>");
        
-                echo("<small>Usuário desde: ".date('d/m/Y',strtotime($data))." - " 
+                echo("<br /><br /><small>Usuário desde: ".date('d/m/Y',strtotime($data))." - " 
                 .date('H:i:s',strtotime($hora))."</small>");
                 
             }
