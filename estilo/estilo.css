@@ -367,6 +367,7 @@ a:hover {
 
 #conteudo {
     width: 98%;
+    height: 500px;
     display: inline-block;
     background: powderblue; 
     border: black 1px;

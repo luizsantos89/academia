@@ -13,15 +13,12 @@
                 <div id="banner">
                     <!-- Implementação do Logotipo -->
                     <div id="logotipo">
-                        <a href="index.php"><img src="imagens/logo.png"  /></a>
+                        <a href="index.php"><img src="imagens/logo2.png"  /></a>
                     </div>
 
                     <!-- Implementação do algoritmo de busca -->
                     <div id="busca">
-                        <form action="index.php" method="get">
-                            <input type="text" size="30" name="busca" />
-                            <input type="submit" value="Buscar" />
-                        </form>
+                        
                     </div>
 
                     <!-- Implementação da área do usuário graficamente-->
