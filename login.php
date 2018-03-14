@@ -1,146 +1,88 @@
 <?php session_start(); ?>
 <html>
-	<head>
-            <title> Pedalando :: O seu fórum sobre ciclismo </title>
-            <link rel="stylesheet" href="estilo/estilo.css" type="text/css" />
-            <link rel="stylesheet" href="estilo/menus.css" type="text/css" />
-            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-            <meta name="author" content="netbeans"/> 
-	</head>
-	<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>...:::: SGA - Sistema de Gestão de Academias ::::...</title>
+        <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+        <link rel="stylesheet" type="text/css" href="estilo/menus.css" />
+    </head>
+    <body>
             <center>
             <div id="pagina">
                 <div id="banner">
-                    <!-- Implementação do Logotipo -->
+                    <!-- Implementação§Ã£o do Logotipo -->
                     <div id="logotipo">
-                        <a href="index.php"><img src="imagens/logo2.png"  /></a>
+                            <a href="index.php"><img src="imagens/logo2.png"  /></a>
                     </div>
 
                     <!-- Implementação do algoritmo de busca -->
                     <div id="busca">
-                        
+                           
                     </div>
 
-                    <!-- Implementação da área do usuário graficamente-->
-                    <div id="area_usuario">
-                        <?php
-                            include("scripts/usuario.php");	
-                        ?>
+                    <!-- Implementação da Área do usuário graficamente-->
+                    <div id="area_usuario">                        
+                        <center>
+                            <table>
+                            <form action='login.php' method='post'>
+                                <tr><td>Usuário:</td><td> <input type='text' name='usuario' size='16' /></td></tr>
+                                <tr><td>Senha: </td><td><input type='password' name='senha' size='16' /></td></tr>
+                                <tr><td align='center'><input type='submit' value='Entrar' /></td>
+                            </form>
+                            <form action='cadastro.php' method='post'>
+                                <td align='center'><a href="">Recuperar senha</a></td></tr>
+                            </form>
+                            </table>
+                        </center>
                     </div>
                 </div>
             <div id="menus">
-                <?php
-                    include("scripts/menu.php");
-                ?>
+                <ul>
+                    <li><a href="index.php">Principal</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="index.php">Minha Conta</a></li>
+                </ul>
+
+                <ul><li><a href=" ">Alunos</a>
+                    <ul>
+                        <li><a href=" ">Cadastrar</a></li>
+                        <li><a href=" ">Consultar</a></li>
+                        <li><a href=" ">Editar</a></li>
+                    </ul>
+                </li></ul>
+
+                <ul><li><a href=" ">Atividades</a>
+                    <ul>
+                        <li><a href=" ">Cadastrar</a></li>
+                        <li><a href=" ">Editar</a></li>
+                        <li><a href=" ">Consultar</a></li>
+                    </ul>
+                </li></ul>
+
+                <ul><li><a href=" ">Pagamentos</a>
+                    <ul>
+                        <li><a href=" ">Registrar</a></li>
+                        <li><a href=" ">Consultar</a></li>
+                    </ul>
+                </li></ul>
             </div>
-			
+
             <!-- Conteudo da Página -->
             <div id="conteudo">
                 <div id="barra_lateral">
-                    
                 </div>
                 <div id="conteudo_pagina">
-                <?php
-                    if(isset($_POST["usuario"])) {
-                        //Lendo as entradas do usuário
-                        //Lê as informações do formulário
-                        if(empty($_POST["usuario"]) || empty($_POST["senha"])){                                        
-                            echo("
-                            <div id='login'>
-                                <div id=erro>Campos não podem ficar em branco</div>                                                        
-                                <form action='login.php' method='post'>
-                                    Login: <input type='text' name='usuario' /><br/><br/>
-                                    Senha: <input type='password' name='senha' /><br /><br />
-                                    <input type='submit' value='Entrar' />
-                                </form>
-                            </div>
-                            ");  
-                        } else {
-                            $user = $_POST["usuario"];
-                            $senha = $_POST["senha"];
-                            if (isset($_POST["url"])) {
-                                $url = $_POST["url"];
-                            }
-                            include("/scripts/conecta_usuario.php");                                
-                            
-                            $usuario_erro = 0;
-                            
-                            //Comparando as entradas do usuário com os dados do BD
-                            while ($usuarios = mysql_fetch_assoc($resultado))
-                            {
-                                if ($usuarios["login"] == $user){
-                                    $usuario_erro++;
-                                    if ($usuarios["senha"] == $senha){
-                                        $_SESSION["usuario"] = $user;
-                                        $_SESSION["id_usuario"] = $usuarios["id_usuario"];
-                                        $_SESSION["apelido"] = $usuarios["apelido"];
-                                        $_SESSION["data_cadastro"] = date('d/m/Y',  strtotime($usuarios["data_cadastro"]));
-                                        $_SESSION["hora_cadastro"] = date('H:i:s',  strtotime($usuarios["hora_cadastro"]));
-                                        if (isset($url)) {
-                                            Header("Location: $url");
-                                        } else {
-                                            header("Location: index.php");
-                                        }
-                                    } else {
-                                            echo("
-                                            <div id='login'>
-                                                <div id=erro>Usuário/Senha incorreto</div>                                                        
-                                                <form action='login.php' method='post'>
-                                                    Login: <input type='text' name='usuario' /><br/><br/>
-                                                    Senha: <input type='password' name='senha' /><br /><br />
-                                                    <input type='submit' value='Entrar' />
-                                                </form>
-                                            </div>
-                                        ");  
-                                    }                               
-                                } 
-                            }
-                            
-                            if ($usuario_erro == 0) {
-                                echo("<div id='login'>
-                                        <div id=erro>Usuário/Senha incorreto</div>                                                        
-                                        <form action='login.php' method='post'>
-                                            Login: <input type='text' name='usuario' /><br/><br/>
-                                            Senha: <input type='password' name='senha' /><br /><br />
-                                            <input type='submit' value='Entrar' />
-                                        </form>
-                                    </div>");
-                            }
-                        }
-                    }
-                    else {
-                        if (isset($_GET["request"])) {
-                            if($_GET["request"] == "cadastro"){
-                                echo('<div id="msgerro">Cadastro feito com sucesso</div>');
-                            }
-                        }
-                        echo("
-                            <div id='login'>
-                                <form action='login.php' method='post'>
-                                  <table>
-                                    <tr><td>Login: </td>
-                                        <td><input type='text' name='usuario' /></td>
-                                    </tr>
-                                    <tr><td>Senha: </td>
-                                    <td><input type='password' name='senha' /></td></tr>");                       
-                        if (isset($_GET["url"])) {
-                            $url = $_GET["url"];
-                            echo("<input type='hidden' name='url' value=$url />");
-                        }
-                            echo("<tr><td colspan='2'><input type='submit' value='Entrar' /></td></tr>
-                                </table></form>
-                            </div>
-                        ");
-                    }
-                    ?></div>
+                    
+                </div>
             </div>
-			
-            <!-- Rodapé da Página -->
+
+            <!-- RodapÃ© da Página -->
             <div id="rodape">
-                    <b>Produzido por: <a href="mailto:luiz.santos89@yahoo.com.br">Luiz Santos</a> e  
-                    <a href="gil_ferreirafilho@yahoo.com.br">Gilmar Ferreira</a><br />
+                Produzido por: <a href="mailto:luiz.santos89@yahoo.com.br">Luiz Santos</a> &copy; 2018<br />
             </div>
-		</div>
-		</center>
-	</body>
+        </div>
+        </center>
+    </body>
 </html>
