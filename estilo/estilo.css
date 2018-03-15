@@ -369,7 +369,7 @@ a:hover {
     width: 98%;
     height: 500px;
     display: inline-block;
-    background: powderblue; 
+    background: teal; 
     border: black 1px;
     padding: 10px;
 }
@@ -385,8 +385,8 @@ a:hover {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-left: 25px;
-    background:green;
-	display: block;
+    background: darkolivegreen;
+    display: block;
 }
 
 #rodape a {
