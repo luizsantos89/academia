@@ -233,7 +233,7 @@ table {
 }
 
 body {
-    background: seashell;
+    background: #C3EEDD;
 }
 
 a, a:visited {
@@ -369,7 +369,7 @@ a:hover {
     width: 98%;
     height: 500px;
     display: inline-block;
-    background: teal; 
+    background: white; 
     border: black 1px;
     padding: 10px;
 }
@@ -377,15 +377,15 @@ a:hover {
 #rodape {
     height: 35px;
     width: 900px;
-    font-family: Arial, Sans-Serif;
-    font-size: 13pt;
+    font-size: 9pt;
+    font-weight: bolder;
     text-align: center;
     padding-top: 8px;
     color: white;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     margin-left: 25px;
-    background: darkolivegreen;
+    background: green;
     display: block;
 }
 

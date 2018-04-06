@@ -71,16 +71,20 @@
 
             <!-- Conteudo da Página -->
             <div id="conteudo">
-                <div id="barra_lateral">
-                </div>
                 <div id="conteudo_pagina">
-                    
+                    <?php
+                        if(isset($_SESSION["user"])) {
+                            include('includes/index.php');
+                        } else {
+                            include('includes/indexSemSession.php');
+                        }
+                    ?>
                 </div>
             </div>
 
             <!-- RodapÃ© da Página -->
             <div id="rodape">
-                Produzido por: <a href="mailto:luiz.santos89@yahoo.com.br">Luiz Santos</a> &copy; 2018<br />
+                Desenvolvido por: <a href="mailto:luiz.santos89@yahoo.com.br">Luiz Santos</a> &copy; 2018 - Disciplina de Seminário III<br />
             </div>
         </div>
         </center>
