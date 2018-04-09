@@ -24,7 +24,7 @@
                     <div id="area_usuario">                        
                         <center>
                             <table>
-                            <form action='login.php' method='post'>
+                            <form action='controlers/processaLogin.php' method='get'>
                                 <tr><td>Usuário:</td><td> <input type='text' name='usuario' size='16' /></td></tr>
                                 <tr><td>Senha: </td><td><input type='password' name='senha' size='16' /></td></tr>
                                 <tr><td align='center'><input type='submit' value='Entrar' /></td>
